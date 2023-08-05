@@ -8,6 +8,7 @@ export const HeroCard = ({
     alter_ego,
     first_appearance,
     characters,
+    imagePath
 }) => {
 
     /* const imagePath = `/assets/${id}.jpg` FORMA ANTES DE CORREGIR*/
@@ -17,8 +18,8 @@ export const HeroCard = ({
             <div className="card">
                 <div className="row no-gutters">
                     <div className="col-4">
-                        {/* <img src={imagePath} className="card-img" alt={superhero} /> FORMA ANTES DE CORREGIR*/}
-                        <img src= { heroImages(`./${ id }.jpg`) } className="card-img" alt={superhero} />
+                        <img src={imagePath} className="card-img" alt={superhero} />
+                        {/* <img src= { heroImages(`./${ id }.jpg`) } className="card-img" alt={superhero} /> */}
                     </div>
                     <div className="col-8">
                         <div className="card-body">
